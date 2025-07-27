@@ -1,0 +1,27 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Contact form submissions - only allow server-side writes via Functions
+    match /contacts/{document} {
+      // Deny all client-side reads and writes
+      // Only Firebase Functions can write to this collection
+      allow read, write: if false;
+    }
+    
+    // Newsletter subscriptions (if needed in the future)
+    match /newsletter/{document} {
+      allow read, write: if false;
+    }
+    
+    // Analytics data (if needed)
+    match /analytics/{document} {
+      allow read, write: if false;
+    }
+    
+    // Default deny all other collections
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

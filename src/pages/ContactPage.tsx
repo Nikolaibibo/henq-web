@@ -7,7 +7,7 @@ import { validateEmail } from '@/lib/utils'
 import type { ContactFormData, FormState } from '@/types'
 
 const ContactForm = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   
   const [formState, setFormState] = useState<FormState>({
     data: {
@@ -67,8 +67,27 @@ const ContactForm = () => {
     setFormState(prev => ({ ...prev, isSubmitting: true, errors: {} }))
 
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 2000))
+      // Call Firebase Function
+      const functionUrl = import.meta.env.DEV 
+        ? 'http://127.0.0.1:5001/henq-web/europe-west3/contactFormSubmit'
+        : 'https://europe-west3-henq-web.cloudfunctions.net/contactFormSubmit'
+      
+      const response = await fetch(functionUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formState.data,
+          language: i18n.language
+        }),
+      })
+
+      const result = await response.json()
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.error || 'Failed to submit form')
+      }
       
       setFormState(prev => ({ 
         ...prev, 
@@ -76,6 +95,7 @@ const ContactForm = () => {
         isSubmitted: true 
       }))
     } catch (error) {
+      console.error('Contact form submission error:', error)
       setFormState(prev => ({ 
         ...prev, 
         isSubmitting: false, 
