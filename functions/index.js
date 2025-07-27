@@ -1,4 +1,5 @@
 const {onRequest} = require("firebase-functions/v2/https");
+const {defineSecret} = require("firebase-functions/params");
 const {logger} = require("firebase-functions");
 const admin = require("firebase-admin");
 const nodemailer = require("nodemailer");
@@ -6,13 +7,17 @@ const nodemailer = require("nodemailer");
 // Initialize Firebase Admin
 admin.initializeApp();
 
+// Define secrets for email credentials
+const emailUser = defineSecret("EMAIL_USER");
+const emailPass = defineSecret("EMAIL_PASS");
+
 // Create transporter for sending emails
 const createTransporter = () => {
-  return nodemailer.createTransporter({
+  return nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
+      user: emailUser.value(),
+      pass: emailPass.value(),
     },
   });
 };
@@ -35,6 +40,7 @@ const sanitizeInput = (input) => {
 // Main contact form handler
 exports.contactFormSubmit = onRequest({
   region: "europe-west3",
+  secrets: [emailUser, emailPass],
   cors: {
     origin: [
       "http://localhost:3000",
@@ -100,70 +106,68 @@ exports.contactFormSubmit = onRequest({
     }
 
     // Send email notification
-    if (process.env.EMAIL_USER && process.env.EMAIL_PASS) {
-      try {
-        const transporter = createTransporter();
+    try {
+      const transporter = createTransporter();
 
-        // Email to company
-        const companyEmailOptions = {
-          from: process.env.EMAIL_USER,
-          to: "kontakt@henq-technologies.de",
-          subject: `Neue Kontaktanfrage von ${sanitizedData.name}`,
-          html: `
-            <h2>Neue Kontaktanfrage</h2>
-            <p><strong>Name:</strong> ${sanitizedData.name}</p>
-            <p><strong>E-Mail:</strong> ${sanitizedData.email}</p>
-            <p><strong>Sprache:</strong> ${sanitizedData.language}</p>
-            <p><strong>Newsletter:</strong> ${sanitizedData.newsletter ? "Ja" : "Nein"}</p>
-            <p><strong>Nachricht:</strong></p>
-            <p>${sanitizedData.message.replace(/\n/g, "<br>")}</p>
-            <hr>
-            <p><small>Gesendet am: ${new Date(sanitizedData.timestamp).toLocaleString("de-DE")}</small></p>
-          `,
-        };
+      // Email to company
+      const companyEmailOptions = {
+        from: emailUser.value(),
+        to: "kontakt@henq-technologies.de",
+        subject: `Neue Kontaktanfrage von ${sanitizedData.name}`,
+        html: `
+          <h2>Neue Kontaktanfrage</h2>
+          <p><strong>Name:</strong> ${sanitizedData.name}</p>
+          <p><strong>E-Mail:</strong> ${sanitizedData.email}</p>
+          <p><strong>Sprache:</strong> ${sanitizedData.language}</p>
+          <p><strong>Newsletter:</strong> ${sanitizedData.newsletter ? "Ja" : "Nein"}</p>
+          <p><strong>Nachricht:</strong></p>
+          <p>${sanitizedData.message.replace(/\n/g, "<br>")}</p>
+          <hr>
+          <p><small>Gesendet am: ${new Date(sanitizedData.timestamp).toLocaleString("de-DE")}</small></p>
+        `,
+      };
 
-        // Confirmation email to user
-        const userEmailOptions = {
-          from: process.env.EMAIL_USER,
-          to: sanitizedData.email,
-          subject: sanitizedData.language === "en" ? 
-            "Thank you for your inquiry - HENQ Technologies" : 
-            "Vielen Dank für Ihre Anfrage - HENQ Technologies",
-          html: sanitizedData.language === "en" ? `
-            <h2>Thank you for your inquiry!</h2>
-            <p>Dear ${sanitizedData.name},</p>
-            <p>We have received your message and will get back to you as soon as possible.</p>
-            <p><strong>Your message:</strong></p>
-            <p>${sanitizedData.message.replace(/\n/g, "<br>")}</p>
-            <hr>
-            <p>Best regards,<br>HENQ Technologies GbR Team</p>
-            <p><small>This is an automated confirmation email.</small></p>
-          ` : `
-            <h2>Vielen Dank für Ihre Anfrage!</h2>
-            <p>Liebe/r ${sanitizedData.name},</p>
-            <p>Wir haben Ihre Nachricht erhalten und werden uns schnellstmöglich bei Ihnen melden.</p>
-            <p><strong>Ihre Nachricht:</strong></p>
-            <p>${sanitizedData.message.replace(/\n/g, "<br>")}</p>
-            <hr>
-            <p>Mit freundlichen Grüßen,<br>HENQ Technologies GbR Team</p>
-            <p><small>Dies ist eine automatische Bestätigungsmail.</small></p>
-          `,
-        };
+      // Confirmation email to user
+      const userEmailOptions = {
+        from: emailUser.value(),
+        to: sanitizedData.email,
+        subject: sanitizedData.language === "en" ? 
+          "Thank you for your inquiry - HENQ Technologies" : 
+          "Vielen Dank für Ihre Anfrage - HENQ Technologies",
+        html: sanitizedData.language === "en" ? `
+          <h2>Thank you for your inquiry!</h2>
+          <p>Dear ${sanitizedData.name},</p>
+          <p>We have received your message and will get back to you as soon as possible.</p>
+          <p><strong>Your message:</strong></p>
+          <p>${sanitizedData.message.replace(/\n/g, "<br>")}</p>
+          <hr>
+          <p>Best regards,<br>HENQ Technologies GbR Team</p>
+          <p><small>This is an automated confirmation email.</small></p>
+        ` : `
+          <h2>Vielen Dank für Ihre Anfrage!</h2>
+          <p>Liebe/r ${sanitizedData.name},</p>
+          <p>Wir haben Ihre Nachricht erhalten und werden uns schnellstmöglich bei Ihnen melden.</p>
+          <p><strong>Ihre Nachricht:</strong></p>
+          <p>${sanitizedData.message.replace(/\n/g, "<br>")}</p>
+          <hr>
+          <p>Mit freundlichen Grüßen,<br>HENQ Technologies GbR Team</p>
+          <p><small>Dies ist eine automatische Bestätigungsmail.</small></p>
+        `,
+      };
 
-        // Send emails
-        await Promise.all([
-          transporter.sendMail(companyEmailOptions),
-          transporter.sendMail(userEmailOptions),
-        ]);
+      // Send emails
+      await Promise.all([
+        transporter.sendMail(companyEmailOptions),
+        transporter.sendMail(userEmailOptions),
+      ]);
 
-        logger.info("Emails sent successfully", {id: docRefId});
-      } catch (emailError) {
-        logger.error("Failed to send emails", {
-          error: emailError.message,
-          id: docRefId,
-        });
-        // Don't fail the entire request if email fails
-      }
+      logger.info("Emails sent successfully", {id: docRefId});
+    } catch (emailError) {
+      logger.error("Failed to send emails", {
+        error: emailError.message,
+        id: docRefId,
+      });
+      // Don't fail the entire request if email fails
     }
 
     // Success response
