@@ -1,10 +1,18 @@
 import { useLanguage } from '@/hooks/useLanguage'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
+import { trackLanguageChange } from '@/config/firebase'
 
 export const LanguageSwitcher = () => {
   const { currentLanguage, languages, switchLanguage } = useLanguage()
   const { t } = useTranslation()
+
+  const handleLanguageSwitch = (newLanguage: string) => {
+    if (newLanguage !== currentLanguage) {
+      trackLanguageChange(currentLanguage, newLanguage)
+      switchLanguage(newLanguage as 'de' | 'en')
+    }
+  }
 
   return (
     <div 
@@ -15,7 +23,7 @@ export const LanguageSwitcher = () => {
       {languages.map((language, index) => (
         <div key={language.code} className="flex items-center">
           <button
-            onClick={() => switchLanguage(language.code)}
+            onClick={() => handleLanguageSwitch(language.code)}
             className={cn(
               'lang-btn',
               currentLanguage === language.code && 'lang-btn-active'

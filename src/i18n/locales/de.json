@@ -268,5 +268,38 @@
     "defaultTitle": "HENQ Technologies GbR - Innovative Technologielösungen aus Medebach",
     "defaultDescription": "HENQ Technologies GbR entwickelt modernste KI-Lösungen, Cloud-Plattformen und IoT-Frameworks. Technologieberatung und maßgeschneiderte Softwareentwicklung aus Deutschland.",
     "defaultKeywords": "HENQ Technologies, KI Lösungen, Cloud Plattformen, IoT Frameworks, Technologieberatung, Softwareentwicklung, Innovation Labs, Medebach, Deutschland, GbR, Nikolai Bockholt, Tobias Nisse"
+  },
+  "cookies": {
+    "banner": {
+      "title": "Cookie-Einstellungen",
+      "description": "Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Einige sind notwendig für die Funktionalität, andere helfen uns, die Website zu verbessern und Ihnen relevante Inhalte zu zeigen.",
+      "acceptAll": "Alle akzeptieren",
+      "onlyNecessary": "Nur notwendige",
+      "customize": "Einstellungen anpassen",
+      "privacyPolicy": "Datenschutzerklärung"
+    },
+    "settings": {
+      "title": "Cookie-Einstellungen",
+      "description": "Hier können Sie Ihre Cookie-Präferenzen verwalten. Sie können Ihre Einstellungen jederzeit ändern, indem Sie auf den Cookie-Einstellungen-Link in der Fußzeile klicken.",
+      "save": "Einstellungen speichern"
+    },
+    "categories": {
+      "necessary": {
+        "title": "Notwendige Cookies",
+        "description": "Diese Cookies sind für die grundlegende Funktionalität der Website erforderlich und können nicht deaktiviert werden. Sie speichern keine persönlich identifizierbaren Informationen."
+      },
+      "statistics": {
+        "title": "Statistik-Cookies",
+        "description": "Diese Cookies helfen uns zu verstehen, wie Besucher mit unserer Website interagieren, indem sie Informationen anonym sammeln und melden. Wir verwenden Google Analytics mit IP-Anonymisierung."
+      },
+      "functional": {
+        "title": "Funktionale Cookies",
+        "description": "Diese Cookies ermöglichen erweiterte Funktionalität und Personalisierung, wie z.B. das Speichern Ihrer Sprachpräferenz und anderer Einstellungen."
+      },
+      "marketing": {
+        "title": "Marketing-Cookies",
+        "description": "Diese Cookies werden verwendet, um Ihnen relevante Werbung zu zeigen. Sie können auch verwendet werden, um die Anzahl der Anzeigen zu begrenzen und die Wirksamkeit von Werbekampagnen zu messen."
+      }
+    }
   }
 }

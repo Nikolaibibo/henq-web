@@ -4,6 +4,7 @@ import { Container, Button, Input, Textarea, Card, CardContent } from '@/compone
 import { SEO } from '@/components/SEO'
 import { SimpleAnimation } from '@/components/SimpleAnimation'
 import { validateEmail } from '@/lib/utils'
+import { trackFormSubmit } from '@/config/firebase'
 import type { ContactFormData, FormState } from '@/types'
 
 const ContactForm = () => {
@@ -89,6 +90,9 @@ const ContactForm = () => {
         throw new Error(result.error || 'Failed to submit form')
       }
       
+      // Track successful form submission
+      trackFormSubmit('contact', true)
+      
       setFormState(prev => ({ 
         ...prev, 
         isSubmitting: false, 
@@ -96,6 +100,10 @@ const ContactForm = () => {
       }))
     } catch (error) {
       console.error('Contact form submission error:', error)
+      
+      // Track failed form submission
+      trackFormSubmit('contact', false)
+      
       setFormState(prev => ({ 
         ...prev, 
         isSubmitting: false, 

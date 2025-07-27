@@ -5,6 +5,7 @@ import { useLanguage } from '@/hooks/useLanguage'
 import { Container, Button, Card, CardContent } from '@/components/ui'
 import { SEO } from '@/components/SEO'
 import { SimpleAnimation } from '@/components/SimpleAnimation'
+import { trackButtonClick } from '@/config/firebase'
 
 const Hero = () => {
   const { t } = useTranslation()
@@ -28,12 +29,19 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to={getLocalizedPath(currentLanguage === 'de' ? 'unternehmen' : 'company')}>
-              <Button size="lg">
+              <Button 
+                size="lg"
+                onClick={() => trackButtonClick('learn_more', 'hero')}
+              >
                 {t('hero.cta')}
               </Button>
             </Link>
             <Link to={getLocalizedPath(currentLanguage === 'de' ? 'kontakt' : 'contact')}>
-              <Button variant="secondary" size="lg">
+              <Button 
+                variant="secondary" 
+                size="lg"
+                onClick={() => trackButtonClick('contact_us', 'hero')}
+              >
                 {t('hero.contact')}
               </Button>
             </Link>
@@ -115,7 +123,12 @@ const CallToAction = () => {
             {t('cta.getInTouch')}
           </p>
           <Link to={getLocalizedPath(currentLanguage === 'de' ? 'kontakt' : 'contact')}>
-            <Button variant="secondary" size="lg" className="bg-white/90 text-primary-900 hover:bg-white hover:shadow-xl transition-all duration-300 backdrop-blur-sm">
+            <Button 
+              variant="secondary" 
+              size="lg" 
+              className="bg-white/90 text-primary-900 hover:bg-white hover:shadow-xl transition-all duration-300 backdrop-blur-sm"
+              onClick={() => trackButtonClick('contact_us', 'cta_section')}
+            >
               {t('hero.contact')}
             </Button>
           </Link>

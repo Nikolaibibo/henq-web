@@ -2,10 +2,12 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useLanguage } from '@/hooks/useLanguage'
 import { Container } from '@/components/ui'
+import { useCookieConsent } from '@/contexts/CookieConsentContext'
 
 export const Footer = () => {
   const { t } = useTranslation()
   const { getLocalizedPath, currentLanguage } = useLanguage()
+  const { openSettings } = useCookieConsent()
 
   const legalLinks = [
     {
@@ -83,7 +85,7 @@ export const Footer = () => {
             {t('footer.copyright')}
           </p>
           
-          <nav className="flex space-x-6">
+          <nav className="flex flex-wrap space-x-6 gap-y-2">
             {legalLinks.map((link) => (
               <Link
                 key={link.path}
@@ -93,6 +95,12 @@ export const Footer = () => {
                 {link.label}
               </Link>
             ))}
+            <button
+              onClick={openSettings}
+              className="text-primary-300 hover:text-signal-400 text-sm transition-colors"
+            >
+              {t('cookies.settings.title')}
+            </button>
           </nav>
         </div>
       </Container>

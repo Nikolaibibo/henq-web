@@ -5,6 +5,9 @@ import { motion } from 'framer-motion'
 import { Navigation } from './Navigation'
 import { Footer } from './Footer'
 import { AnalyticsProvider } from '@/components/AnalyticsProvider'
+import { CookieConsentProvider } from '@/contexts/CookieConsentContext'
+import { CookieConsent } from '@/components/cookie/CookieConsent'
+import { CookieSettings } from '@/components/cookie/CookieSettings'
 
 const LoadingSpinner = () => (
   <div className="min-h-screen flex items-center justify-center">
@@ -54,31 +57,37 @@ export const Layout = () => {
   }, [locale])
 
   return (
-    <AnalyticsProvider>
-      <div className="min-h-screen flex flex-col">
-        <SkipLink />
-        <Navigation />
-        
-        <main 
-          id="main-content"
-          className="flex-1"
-          role="main"
-          tabIndex={-1}
-        >
-          <Suspense fallback={<LoadingSpinner />}>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.3, ease: "easeOut" }}
-            >
-              <Outlet />
-            </motion.div>
-          </Suspense>
-        </main>
-        
-        <Footer />
-      </div>
-    </AnalyticsProvider>
+    <CookieConsentProvider>
+      <AnalyticsProvider>
+        <div className="min-h-screen flex flex-col">
+          <SkipLink />
+          <Navigation />
+          
+          <main 
+            id="main-content"
+            className="flex-1"
+            role="main"
+            tabIndex={-1}
+          >
+            <Suspense fallback={<LoadingSpinner />}>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+              >
+                <Outlet />
+              </motion.div>
+            </Suspense>
+          </main>
+          
+          <Footer />
+          
+          {/* Cookie Consent Components */}
+          <CookieConsent />
+          <CookieSettings />
+        </div>
+      </AnalyticsProvider>
+    </CookieConsentProvider>
   )
 }
