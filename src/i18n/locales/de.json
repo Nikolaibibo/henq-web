@@ -1,0 +1,259 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "company": "Unternehmen",
+    "products": "Produkte",
+    "founders": "Gründer",
+    "news": "News",
+    "contact": "Kontakt",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz"
+  },
+  "hero": {
+    "title": "HENQ Technologies",
+    "subtitle": "Innovative Lösungen für die Zukunft",
+    "description": "Wir entwickeln modernste Technologien und bieten maßgeschneiderte Lösungen für Unternehmen jeder Größe.",
+    "cta": "Mehr erfahren",
+    "contact": "Kontakt aufnehmen"
+  },
+  "company": {
+    "title": "Unternehmen",
+    "subtitle": "Über HENQ Technologies GbR",
+    "description": "Wir sind ein innovatives Technologieunternehmen mit Fokus auf zukunftsweisende Lösungen.",
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Innovation und Qualität in der Technologieentwicklung zu vereinen."
+    },
+    "vision": {
+      "title": "Unsere Vision",
+      "description": "Die Zukunft der Technologie aktiv mitzugestalten."
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Wir verschieben ständig die Grenzen des technologisch Möglichen."
+      },
+      "quality": {
+        "title": "Qualität",
+        "description": "Wir liefern außergewöhnliche Lösungen, die die Erwartungen übertreffen."
+      },
+      "partnership": {
+        "title": "Partnerschaft",
+        "description": "Wir arbeiten eng mit unseren Kunden zusammen, um gemeinsamen Erfolg zu erzielen."
+      }
+    }
+  },
+  "products": {
+    "title": "Produkte",
+    "subtitle": "Unsere Lösungen",
+    "description": "Entdecken Sie unsere innovativen Produkte und Dienstleistungen.",
+    "comingSoon": "Bald verfügbar",
+    "learnMore": "Mehr erfahren",
+    "keyFeatures": "Hauptfunktionen:",
+    "items": {
+      "aiSolutions": {
+        "title": "KI-Lösungen",
+        "description": "Modernste künstliche Intelligenz-Lösungen für Geschäftsautomatisierung.",
+        "status": "Bald verfügbar",
+        "features": {
+          "ml": "Maschinelles Lernen",
+          "nlp": "Natürliche Sprachverarbeitung",
+          "cv": "Computer Vision"
+        }
+      },
+      "cloudPlatform": {
+        "title": "Cloud-Plattform",
+        "description": "Skalierbare Cloud-Infrastruktur und -Services für moderne Anwendungen.",
+        "status": "In Entwicklung",
+        "features": {
+          "autoScale": "Automatische Skalierung",
+          "ha": "Hochverfügbarkeit",
+          "security": "Security First"
+        }
+      },
+      "iotFramework": {
+        "title": "IoT-Framework",
+        "description": "Komplettes Framework für Internet of Things Geräteverwaltung.",
+        "status": "Forschungsphase",
+        "features": {
+          "deviceMgmt": "Geräteverwaltung",
+          "analytics": "Echtzeitanalysen",
+          "edge": "Edge Computing"
+        }
+      }
+    },
+    "innovationNotice": {
+      "title": "Innovation im Gange",
+      "description": "Wir arbeiten ständig an neuen Technologien und Lösungen. Bleiben Sie dran für spannende Ankündigungen über unsere kommenden Produkte.",
+      "earlyAccess": "Interessiert an Early Access? Kontaktieren Sie uns!"
+    }
+  },
+  "services": {
+    "technologyConsulting": {
+      "title": "Technologieberatung",
+      "description": "Expertenberatung für Ihre Technologiestrategie und -implementierung."
+    },
+    "softwareDevelopment": {
+      "title": "Softwareentwicklung",
+      "description": "Maßgeschneiderte Softwarelösungen für Ihre Geschäftsanforderungen."
+    },
+    "innovationLabs": {
+      "title": "Innovationslabore",
+      "description": "Erforschung modernster Technologien für zukünftige Anwendungen."
+    }
+  },
+  "cta": {
+    "readyToStart": "Bereit, Ihr Projekt zu starten?",
+    "getInTouch": "Kontaktieren Sie uns, um zu besprechen, wie wir Ihre Vision zum Leben erwecken können."
+  },
+  "founders": {
+    "title": "Gründer",
+    "subtitle": "Das Team hinter HENQ",
+    "description": "Lernen Sie die Visionäre kennen, die HENQ Technologies ins Leben gerufen haben.",
+    "areasOfExpertise": "Fachgebiete:",
+    "journey": {
+      "title": "Unser Weg",
+      "paragraph1": "HENQ Technologies wurde mit einer einfachen, aber ehrgeizigen Vision gegründet: die Lücke zwischen modernster Technologie und praktischen Geschäftslösungen zu schließen. Unsere Gründer vereinen jahrzehntelange Erfahrung in Softwareentwicklung, künstlicher Intelligenz und Geschäftsstrategie.",
+      "paragraph2": "Wir glauben, dass die Zukunft denen gehört, die Technologie nutzen können, um nicht nur die Probleme von heute zu lösen, sondern auch die Chancen von morgen zu antizipieren. Deshalb engagieren wir uns für kontinuierliche Innovation und verschieben die Grenzen des Möglichen."
+    },
+    "team": {
+      "nikolaiBockholt": {
+        "name": "Nikolai Bockholt",
+        "role": "Mitgründer & Gesellschafter",
+        "bio": "Innovativer Technologieexperte mit Leidenschaft für moderne Softwareentwicklung und digitale Transformation.",
+        "expertise": {
+          "development": "Softwareentwicklung",
+          "architecture": "System-Architektur",
+          "innovation": "Technologie-Innovation"
+        }
+      },
+      "tobiasNisse": {
+        "name": "Tobias Nisse",
+        "role": "Mitgründer & Gesellschafter",
+        "bio": "Erfahrener Technologie-Stratege mit Fokus auf skalierbare Lösungen und Geschäftsentwicklung.",
+        "expertise": {
+          "strategy": "Geschäftsstrategie",
+          "scaling": "Skalierbare Systeme",
+          "consulting": "Technologieberatung"
+        }
+      }
+    }
+  },
+  "news": {
+    "title": "News",
+    "subtitle": "Aktuelle Nachrichten",
+    "description": "Bleiben Sie auf dem Laufenden über unsere neuesten Entwicklungen.",
+    "readMore": "Weiterlesen",
+    "noNews": "Keine Nachrichten verfügbar",
+    "moreNewsComing": {
+      "title": "Weitere News folgen",
+      "description": "Wir arbeiten daran, unseren News-Bereich mit regelmäßigen Updates zu unseren Projekten, Forschungen und Brancheneinblicken zu erweitern. Bleiben Sie dran für mehr Inhalte!"
+    },
+    "categories": {
+      "companyNews": "Unternehmensnachrichten",
+      "partnerships": "Partnerschaften",
+      "research": "Forschung"
+    },
+    "articles": {
+      "innovationLab": {
+        "title": "HENQ Technologies eröffnet Innovationslabor",
+        "excerpt": "Wir freuen uns, die Eröffnung unseres neuen Innovationslabors mit Schwerpunkt auf KI und neuen Technologien bekannt zu geben."
+      },
+      "partnerships": {
+        "title": "Partnerschaft mit führenden Technologieunternehmen",
+        "excerpt": "HENQ Technologies bildet strategische Partnerschaften zur Beschleunigung der Technologieentwicklung."
+      },
+      "aiEthics": {
+        "title": "Forschungspapier über KI-Ethik veröffentlicht",
+        "excerpt": "Unser Forschungsteam trägt zur laufenden Diskussion über ethische KI-Entwicklung bei."
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Nehmen Sie Kontakt mit uns auf",
+    "description": "Wir freuen uns auf Ihre Nachricht und werden uns schnellstmöglich bei Ihnen melden.",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "consent": "Ich stimme der Verarbeitung meiner Daten gemäß der",
+      "privacy": "Datenschutzerklärung",
+      "newsletter": "Ich möchte den Newsletter erhalten (optional)",
+      "submit": "Nachricht senden",
+      "submitting": "Wird gesendet...",
+      "required": "Pflichtfeld",
+      "nameRequired": "Name ist erforderlich",
+      "emailRequired": "E-Mail ist erforderlich",
+      "emailInvalid": "Ungültige E-Mail-Adresse",
+      "messageRequired": "Nachricht ist erforderlich",
+      "consentRequired": "Zustimmung zur Datenverarbeitung ist erforderlich"
+    },
+    "success": {
+      "title": "Nachricht gesendet",
+      "message": "Vielen Dank für Ihre Nachricht. Wir werden uns in Kürze bei Ihnen melden."
+    },
+    "error": {
+      "title": "Fehler",
+      "message": "Beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 HENQ Technologies GbR. Alle Rechte vorbehalten.",
+    "links": {
+      "imprint": "Impressum",
+      "privacy": "Datenschutz"
+    }
+  },
+  "common": {
+    "loading": "Lädt...",
+    "error": "Fehler",
+    "retry": "Erneut versuchen",
+    "close": "Schließen",
+    "ok": "OK",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "view": "Anzeigen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "previous": "Zurück",
+    "skipToContent": "Zum Hauptinhalt springen"
+  },
+  "accessibility": {
+    "menu": "Hauptmenü",
+    "navigation": "Navigation",
+    "searchButton": "Suchen",
+    "languageSwitch": "Sprache wechseln",
+    "currentLanguage": "Aktuelle Sprache: Deutsch"
+  },
+  "legal": {
+    "imprint": {
+      "title": "Impressum",
+      "subtitle": "Rechtliche Informationen über HENQ Technologies GbR",
+      "company": "HENQ Technologies GbR",
+      "address": "St. Johannes Straße 16\n59964 Medebach\nDeutschland",
+      "contact": "Kontakt",
+      "email": "kontakt@henq-technologies.de",
+      "phone": "[Telefonnummer optional einfügen]",
+      "responsible": "Verantwortlich für den Inhalt",
+      "representatives": "Vertreten durch die Gesellschafter"
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "subtitle": "Informationen über den Schutz Ihrer persönlichen Daten",
+      "lastUpdated": "Zuletzt aktualisiert",
+      "dataController": "Verantwortlicher",
+      "dataProcessing": "Datenverarbeitung",
+      "cookies": "Cookies",
+      "contact": "Kontakt zum Datenschutz"
+    }
+  },
+  "seo": {
+    "defaultTitle": "HENQ Technologies GbR - Innovative Technologielösungen aus Medebach",
+    "defaultDescription": "HENQ Technologies GbR entwickelt modernste KI-Lösungen, Cloud-Plattformen und IoT-Frameworks. Technologieberatung und maßgeschneiderte Softwareentwicklung aus Deutschland.",
+    "defaultKeywords": "HENQ Technologies, KI Lösungen, Cloud Plattformen, IoT Frameworks, Technologieberatung, Softwareentwicklung, Innovation Labs, Medebach, Deutschland, GbR, Nikolai Bockholt, Tobias Nisse"
+  }
+}

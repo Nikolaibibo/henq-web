@@ -1,0 +1,132 @@
+import { useTranslation } from 'react-i18next'
+import { motion } from 'framer-motion'
+import { Container, Card, CardContent } from '@/components/ui'
+
+export const NewsPage = () => {
+  const { t } = useTranslation()
+
+  // Placeholder news articles
+  const newsArticles = [
+    {
+      title: t('news.articles.innovationLab.title'),
+      date: '2024-01-15',
+      excerpt: t('news.articles.innovationLab.excerpt'),
+      category: t('news.categories.companyNews')
+    },
+    {
+      title: t('news.articles.partnerships.title'),
+      date: '2024-01-10',
+      excerpt: t('news.articles.partnerships.excerpt'),
+      category: t('news.categories.partnerships')
+    },
+    {
+      title: t('news.articles.aiEthics.title'),
+      date: '2024-01-05',
+      excerpt: t('news.articles.aiEthics.excerpt'),
+      category: t('news.categories.research')
+    }
+  ]
+
+  return (
+    <>
+      <title>{t('news.title')} - HENQ Technologies</title>
+      
+      {/* Hero Section */}
+      <section className="section-lg bg-primary-900 text-primary-50">
+        <Container>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center max-w-4xl mx-auto"
+          >
+            <h1 className="heading-hero mb-6">
+              {t('news.title')}
+            </h1>
+            <p className="text-large text-primary-200">
+              {t('news.description')}
+            </p>
+          </motion.div>
+        </Container>
+      </section>
+
+      {/* News Articles */}
+      <section className="section">
+        <Container>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="heading-section">
+              {t('news.subtitle')}
+            </h2>
+            
+            <div className="space-y-8 max-w-4xl mx-auto">
+              {newsArticles.map((article, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                >
+                  <Card>
+                    <CardContent>
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                        <span className="px-3 py-1 bg-signal-100 text-signal-700 rounded-full text-sm w-fit">
+                          {article.category}
+                        </span>
+                        <time className="text-primary-600 text-sm mt-2 sm:mt-0">
+                          {new Date(article.date).toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                          })}
+                        </time>
+                      </div>
+                      
+                      <h3 className="text-xl font-bold text-primary-900 mb-3">
+                        {article.title}
+                      </h3>
+                      
+                      <p className="text-primary-700 leading-relaxed mb-4">
+                        {article.excerpt}
+                      </p>
+                      
+                      <button className="text-signal-600 font-medium hover:text-signal-700 transition-colors">
+                        {t('news.readMore')} →
+                      </button>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </Container>
+      </section>
+
+      {/* Coming Soon Notice */}
+      <section className="section bg-signal-50">
+        <Container>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center max-w-3xl mx-auto"
+          >
+            <div className="text-5xl mb-6">📰</div>
+            <h2 className="text-3xl font-bold text-primary-900 mb-4">
+              {t('news.moreNewsComing.title')}
+            </h2>
+            <p className="text-lg text-primary-700">
+              {t('news.moreNewsComing.description')}
+            </p>
+          </motion.div>
+        </Container>
+      </section>
+    </>
+  )
+}

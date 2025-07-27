@@ -1,0 +1,259 @@
+{
+  "nav": {
+    "home": "Home",
+    "company": "Company",
+    "products": "Products",
+    "founders": "Founders",
+    "news": "News",
+    "contact": "Contact",
+    "imprint": "Imprint",
+    "privacy": "Privacy"
+  },
+  "hero": {
+    "title": "HENQ Technologies",
+    "subtitle": "Innovative Solutions for the Future",
+    "description": "We develop cutting-edge technologies and provide tailored solutions for businesses of all sizes.",
+    "cta": "Learn more",
+    "contact": "Get in touch"
+  },
+  "company": {
+    "title": "Company",
+    "subtitle": "About HENQ Technologies GbR",
+    "description": "We are an innovative technology company focused on forward-thinking solutions.",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To unite innovation and quality in technology development."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To actively shape the future of technology."
+    },
+    "values": {
+      "title": "Our Values",
+      "innovation": {
+        "title": "Innovation",
+        "description": "We constantly push the boundaries of what's possible with technology."
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "We deliver exceptional solutions that exceed expectations."
+      },
+      "partnership": {
+        "title": "Partnership",
+        "description": "We work closely with our clients to achieve shared success."
+      }
+    }
+  },
+  "products": {
+    "title": "Products",
+    "subtitle": "Our Solutions",
+    "description": "Discover our innovative products and services.",
+    "comingSoon": "Coming soon",
+    "learnMore": "Learn more",
+    "keyFeatures": "Key Features:",
+    "items": {
+      "aiSolutions": {
+        "title": "AI Solutions",
+        "description": "Cutting-edge artificial intelligence solutions for business automation.",
+        "status": "Coming Soon",
+        "features": {
+          "ml": "Machine Learning",
+          "nlp": "Natural Language Processing",
+          "cv": "Computer Vision"
+        }
+      },
+      "cloudPlatform": {
+        "title": "Cloud Platform",
+        "description": "Scalable cloud infrastructure and services for modern applications.",
+        "status": "In Development",
+        "features": {
+          "autoScale": "Auto Scaling",
+          "ha": "High Availability",
+          "security": "Security First"
+        }
+      },
+      "iotFramework": {
+        "title": "IoT Framework",
+        "description": "Complete framework for Internet of Things device management.",
+        "status": "Research Phase",
+        "features": {
+          "deviceMgmt": "Device Management",
+          "analytics": "Real-time Analytics",
+          "edge": "Edge Computing"
+        }
+      }
+    },
+    "innovationNotice": {
+      "title": "Innovation in Progress",
+      "description": "We're constantly working on new technologies and solutions. Stay tuned for exciting announcements about our upcoming products.",
+      "earlyAccess": "Interested in early access? Get in touch with us!"
+    }
+  },
+  "services": {
+    "technologyConsulting": {
+      "title": "Technology Consulting",
+      "description": "Expert guidance for your technology strategy and implementation."
+    },
+    "softwareDevelopment": {
+      "title": "Software Development",
+      "description": "Custom software solutions tailored to your business needs."
+    },
+    "innovationLabs": {
+      "title": "Innovation Labs",
+      "description": "Exploring cutting-edge technologies for future applications."
+    }
+  },
+  "cta": {
+    "readyToStart": "Ready to Start Your Project?",
+    "getInTouch": "Get in touch with us to discuss how we can help bring your vision to life."
+  },
+  "founders": {
+    "title": "Founders",
+    "subtitle": "The Team Behind HENQ",
+    "description": "Meet the visionaries who brought HENQ Technologies to life.",
+    "areasOfExpertise": "Areas of Expertise:",
+    "journey": {
+      "title": "Our Journey",
+      "paragraph1": "HENQ Technologies was founded with a simple yet ambitious vision: to bridge the gap between cutting-edge technology and practical business solutions. Our founders bring together decades of experience in software development, artificial intelligence, and business strategy.",
+      "paragraph2": "We believe that the future belongs to those who can harness technology not just to solve today's problems, but to anticipate tomorrow's opportunities. That's why we're committed to continuous innovation and pushing the boundaries of what's possible."
+    },
+    "team": {
+      "nikolaiBockholt": {
+        "name": "Nikolai Bockholt",
+        "role": "Co-Founder & Partner",
+        "bio": "Innovative technology expert with a passion for modern software development and digital transformation.",
+        "expertise": {
+          "development": "Software Development",
+          "architecture": "System Architecture",
+          "innovation": "Technology Innovation"
+        }
+      },
+      "tobiasNisse": {
+        "name": "Tobias Nisse",
+        "role": "Co-Founder & Partner",
+        "bio": "Experienced technology strategist focused on scalable solutions and business development.",
+        "expertise": {
+          "strategy": "Business Strategy",
+          "scaling": "Scalable Systems",
+          "consulting": "Technology Consulting"
+        }
+      }
+    }
+  },
+  "news": {
+    "title": "News",
+    "subtitle": "Latest Updates",
+    "description": "Stay informed about our latest developments.",
+    "readMore": "Read more",
+    "noNews": "No news available",
+    "moreNewsComing": {
+      "title": "More News Coming Soon",
+      "description": "We're working on expanding our news section with regular updates about our projects, research, and industry insights. Stay tuned for more content!"
+    },
+    "categories": {
+      "companyNews": "Company News",
+      "partnerships": "Partnerships",
+      "research": "Research"
+    },
+    "articles": {
+      "innovationLab": {
+        "title": "HENQ Technologies Launches Innovation Lab",
+        "excerpt": "We are excited to announce the opening of our new innovation lab focused on AI and emerging technologies."
+      },
+      "partnerships": {
+        "title": "Partnership with Leading Tech Companies",
+        "excerpt": "HENQ Technologies forms strategic partnerships to accelerate technology development."
+      },
+      "aiEthics": {
+        "title": "Research Paper Published on AI Ethics",
+        "excerpt": "Our research team contributes to the ongoing discussion about ethical AI development."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in Touch",
+    "description": "We look forward to hearing from you and will get back to you as soon as possible.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "consent": "I agree to the processing of my data according to the",
+      "privacy": "Privacy Policy",
+      "newsletter": "I would like to receive the newsletter (optional)",
+      "submit": "Send message",
+      "submitting": "Sending...",
+      "required": "Required field",
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email address",
+      "messageRequired": "Message is required",
+      "consentRequired": "Consent to data processing is required"
+    },
+    "success": {
+      "title": "Message sent",
+      "message": "Thank you for your message. We will get back to you shortly."
+    },
+    "error": {
+      "title": "Error",
+      "message": "An error occurred while sending the message. Please try again."
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 HENQ Technologies GbR. All rights reserved.",
+    "links": {
+      "imprint": "Imprint",
+      "privacy": "Privacy"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Try again",
+    "close": "Close",
+    "ok": "OK",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "skipToContent": "Skip to main content"
+  },
+  "accessibility": {
+    "menu": "Main menu",
+    "navigation": "Navigation",
+    "searchButton": "Search",
+    "languageSwitch": "Switch language",
+    "currentLanguage": "Current language: English"
+  },
+  "legal": {
+    "imprint": {
+      "title": "Imprint",
+      "subtitle": "Legal information about HENQ Technologies GbR",
+      "company": "HENQ Technologies GbR",
+      "address": "St. Johannes Straße 16\n59964 Medebach\nGermany",
+      "contact": "Contact",
+      "email": "kontakt@henq-technologies.de",
+      "phone": "[optional phone number]",
+      "responsible": "Responsible for content",
+      "representatives": "Represented by the partners"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "subtitle": "Information about the protection of your personal data",
+      "lastUpdated": "Last updated",
+      "dataController": "Data Controller",
+      "dataProcessing": "Data Processing",
+      "cookies": "Cookies",
+      "contact": "Privacy Contact"
+    }
+  },
+  "seo": {
+    "defaultTitle": "HENQ Technologies GbR - Innovative Technology Solutions from Germany",
+    "defaultDescription": "HENQ Technologies GbR develops cutting-edge AI solutions, cloud platforms, and IoT frameworks. Technology consulting and custom software development from Medebach, Germany.",
+    "defaultKeywords": "HENQ Technologies, AI Solutions, Cloud Platforms, IoT Frameworks, Technology Consulting, Software Development, Innovation Labs, Germany, GbR, Nikolai Bockholt, Tobias Nisse"
+  }
+}

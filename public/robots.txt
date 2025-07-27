@@ -1,0 +1,35 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://henq-technologies.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot  
+Allow: /
+
+# Block AI training crawlers (optional)
+User-agent: CCBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
