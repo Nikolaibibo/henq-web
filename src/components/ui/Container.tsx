@@ -2,15 +2,15 @@ import type { HTMLAttributes } from 'react'
 import { cn } from '@/lib/utils'
 
 interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
-  size?: 'sm' | 'md' | 'lg' | 'xl' | 'full'
+  size?: 'text' | 'narrow' | 'content' | 'xl' | 'full'
   padding?: boolean
   children: React.ReactNode
 }
 
 const sizeVariants = {
-  sm: 'max-w-3xl',
-  md: 'max-w-5xl',
-  lg: 'max-w-6xl',
+  text: 'container-text',
+  narrow: 'container-narrow',
+  content: 'container-content',
   xl: 'max-w-7xl',
   full: 'max-w-none'
 }

@@ -30,7 +30,7 @@ export const ImprintPage = () => {
 
       {/* Imprint Content */}
       <section className="section">
-        <Container size="md">
+        <Container size="narrow">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

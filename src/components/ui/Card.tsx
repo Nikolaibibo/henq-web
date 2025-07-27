@@ -11,8 +11,8 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {
 
 const cardVariants = {
   default: 'card',
-  elevated: 'card shadow-lg',
-  outlined: 'card border-2 border-primary-200 shadow-none'
+  elevated: 'card-elevated',
+  outlined: 'card-flat'
 }
 
 export const Card = ({ 
