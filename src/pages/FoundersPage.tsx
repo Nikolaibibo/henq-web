@@ -39,16 +39,17 @@ export const FoundersPage = () => {
       />
       
       {/* Hero Section */}
-      <section className="section-lg bg-primary-900 text-primary-50">
+      <section className="section-lg text-primary-50 bg-gradient-hero-alt relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-overlay opacity-40"></div>
         <Container>
           <SimpleAnimation 
             delay={100}
-            className="text-center max-w-4xl mx-auto"
+            className="text-center max-w-4xl mx-auto relative z-10"
           >
-            <h1 className="heading-hero mb-6">
+            <h1 className="heading-hero mb-6 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent">
               {t('founders.title')}
             </h1>
-            <p className="text-large text-primary-200">
+            <p className="text-large text-white/95 backdrop-blur-sm">
               {t('founders.description')}
             </p>
           </SimpleAnimation>
@@ -56,7 +57,7 @@ export const FoundersPage = () => {
       </section>
 
       {/* Founders Section */}
-      <section className="section">
+      <section className="section bg-gradient-subtle">
         <Container>
           <SimpleAnimation delay={200}>
             <h2 className="heading-section">

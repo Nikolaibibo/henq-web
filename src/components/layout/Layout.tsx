@@ -1,5 +1,5 @@
 import { useEffect, Suspense } from 'react'
-import { Outlet, useParams } from 'react-router-dom'
+import { Outlet, useParams, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { Navigation } from './Navigation'
@@ -30,6 +30,12 @@ const SkipLink = () => {
 export const Layout = () => {
   const { locale } = useParams<{ locale: string }>()
   const { i18n } = useTranslation()
+  const location = useLocation()
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [location.pathname])
 
   // Handle language changes
   useEffect(() => {

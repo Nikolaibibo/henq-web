@@ -86,31 +86,45 @@
 @layer components {
   /* Button Components */
   .btn-primary {
-    @apply bg-signal-500 text-white px-6 py-3 rounded-lg font-medium;
-    @apply transition-all duration-200 hover:bg-signal-600;
-    @apply hover:-translate-y-0.5 hover:shadow-lg;
+    @apply bg-gradient-button px-6 py-3 rounded-lg font-medium;
+    @apply transition-all duration-300 hover:bg-gradient-button-hover;
+    @apply hover:-translate-y-0.5 hover:shadow-xl hover:shadow-signal-500/25;
     @apply focus-visible:ring-4 focus-visible:ring-signal-500/20;
     @apply disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0;
+    color: white !important;
+  }
+
+  .btn-primary:hover {
+    color: white !important;
   }
 
   .btn-secondary {
     @apply border-2 border-primary-900 text-primary-900 px-6 py-3 rounded-lg font-medium;
-    @apply transition-all duration-200 hover:bg-primary-900 hover:text-white;
+    @apply transition-all duration-300 hover:bg-gradient-primary-dark hover:text-white hover:border-transparent;
+    @apply hover:-translate-y-0.5 hover:shadow-lg;
     @apply focus-visible:ring-4 focus-visible:ring-primary-900/20;
     @apply disabled:opacity-50 disabled:cursor-not-allowed;
+    @apply relative overflow-hidden;
   }
 
   .btn-ghost {
     @apply text-signal-500 px-6 py-3 rounded-lg font-medium;
-    @apply transition-all duration-200 hover:bg-signal-50;
+    @apply transition-all duration-300 hover:bg-gradient-signal-subtle;
+    @apply hover:-translate-y-0.5;
     @apply focus-visible:ring-4 focus-visible:ring-signal-500/20;
   }
 
   /* Card Components */
   .card {
-    @apply bg-white rounded-xl p-6 shadow-sm;
-    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
-    @apply border border-primary-100;
+    @apply bg-gradient-card rounded-xl p-6 shadow-sm;
+    @apply transition-all duration-300 hover:bg-gradient-card-hover hover:shadow-xl hover:-translate-y-1;
+    @apply border border-primary-100/50 backdrop-blur-sm;
+    @apply relative overflow-hidden;
+  }
+
+  .card::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-mesh opacity-30 pointer-events-none;
   }
 
   /* Form Components */
@@ -144,15 +158,39 @@
 
   /* Layout Components */
   .section {
-    @apply py-16 px-6;
+    @apply py-16 px-6 relative;
   }
 
   .section-lg {
-    @apply py-24 px-6;
+    @apply py-24 px-6 relative;
+  }
+
+  .section-hero {
+    @apply bg-gradient-hero relative overflow-hidden;
+  }
+
+  .section-hero::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-overlay opacity-50;
+  }
+
+  .section-hero::after {
+    content: '';
+    @apply absolute inset-0 bg-gradient-mesh opacity-20;
   }
 
   .container-custom {
-    @apply max-w-7xl mx-auto;
+    @apply max-w-7xl mx-auto relative z-10;
+  }
+
+  /* Modern gradient backgrounds */
+  .bg-gradient-subtle {
+    @apply bg-gradient-primary relative;
+  }
+
+  .bg-gradient-subtle::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-mesh opacity-40;
   }
 
   /* Typography */

@@ -7,6 +7,49 @@
 
 ## Common Issues & Solutions
 
+### Firebase Deployment Issues
+
+#### Issue: Firestore index deployment fails
+**Error**: `this index is not necessary, configure using single field index controls`
+
+**Solution**: Remove unnecessary single-field indexes from `firestore.indexes.json`
+```json
+{
+  "indexes": [
+    // ❌ Remove single-field indexes like this:
+    // {
+    //   "collectionGroup": "contacts",
+    //   "queryScope": "COLLECTION",
+    //   "fields": [
+    //     {
+    //       "fieldPath": "timestamp",
+    //       "order": "DESCENDING"
+    //     }
+    //   ]
+    // },
+    
+    // ✅ Keep only composite indexes:
+    {
+      "collectionGroup": "contacts",
+      "queryScope": "COLLECTION", 
+      "fields": [
+        {
+          "fieldPath": "email",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "timestamp",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
+```
+
+**Explanation**: Firestore automatically creates single-field indexes, so manually defining them causes conflicts.
+
 ### Development Server Issues
 
 #### Issue: Server won't start

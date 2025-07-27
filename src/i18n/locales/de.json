@@ -197,7 +197,20 @@
     "error": {
       "title": "Fehler",
       "message": "Beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
-    }
+    },
+    "info": {
+      "contact": "Kontaktinformationen",
+      "email": "kontakt@henq-technologies.de",
+      "phone": "+49 (0) 2982 123456",
+      "company": "HENQ Technologies GbR",
+      "address": "St. Johannes Straße 16\n59964 Medebach\nDeutschland"
+    },
+    "responseTime": {
+      "title": "Antwortzeit",
+      "within24h": "Wir antworten normalerweise innerhalb von 24 Stunden",
+      "businessHours": "Geschäftszeiten: Montag - Freitag, 9:00 - 18:00 MEZ"
+    },
+    "sendAnother": "Weitere Nachricht senden"
   },
   "footer": {
     "copyright": "© 2025 HENQ Technologies GbR. Alle Rechte vorbehalten.",

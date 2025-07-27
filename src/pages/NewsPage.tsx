@@ -32,18 +32,19 @@ export const NewsPage = () => {
       <title>{t('news.title')} - HENQ Technologies</title>
       
       {/* Hero Section */}
-      <section className="section-lg bg-primary-900 text-primary-50">
+      <section className="section-lg text-primary-50 bg-gradient-hero-alt relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-overlay opacity-40"></div>
         <Container>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center max-w-4xl mx-auto"
+            className="text-center max-w-4xl mx-auto relative z-10"
           >
-            <h1 className="heading-hero mb-6">
+            <h1 className="heading-hero mb-6 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent">
               {t('news.title')}
             </h1>
-            <p className="text-large text-primary-200">
+            <p className="text-large text-white/95 backdrop-blur-sm">
               {t('news.description')}
             </p>
           </motion.div>
@@ -51,7 +52,7 @@ export const NewsPage = () => {
       </section>
 
       {/* News Articles */}
-      <section className="section">
+      <section className="section bg-gradient-subtle">
         <Container>
           <motion.div
             initial={{ opacity: 0 }}

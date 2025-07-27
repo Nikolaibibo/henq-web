@@ -11,18 +11,19 @@ const Hero = () => {
   const { getLocalizedPath, currentLanguage } = useLanguage()
 
   return (
-    <section className="bg-primary-900 text-primary-50 section-lg">
+    <section className="section-lg text-primary-50 bg-gradient-hero-alt relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-overlay opacity-40"></div>
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-4xl mx-auto"
+          className="text-center max-w-4xl mx-auto relative z-10"
         >
-          <h1 className="heading-hero mb-6">
+          <h1 className="heading-hero mb-6 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent">
             {t('hero.title')}
           </h1>
-          <p className="text-large text-primary-200 mb-8 max-w-2xl mx-auto">
+          <p className="text-large text-white/95 mb-8 max-w-2xl mx-auto backdrop-blur-sm">
             {t('hero.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -65,7 +66,7 @@ const Services = () => {
   ]
 
   return (
-    <section className="section bg-primary-50">
+    <section className="section bg-gradient-subtle">
       <Container>
         <SimpleAnimation delay={200}>
           <h2 className="heading-section">
@@ -100,20 +101,21 @@ const CallToAction = () => {
   const { getLocalizedPath, currentLanguage } = useLanguage()
 
   return (
-    <section className="section bg-signal-500 text-white">
+    <section className="section bg-gradient-cta text-white relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-overlay opacity-30"></div>
       <Container>
         <SimpleAnimation 
           delay={100} 
-          className="text-center max-w-3xl mx-auto"
+          className="text-center max-w-3xl mx-auto relative z-10"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent">
             {t('cta.readyToStart')}
           </h2>
-          <p className="text-lg mb-8 text-signal-100">
+          <p className="text-lg mb-8 text-white/95 backdrop-blur-sm">
             {t('cta.getInTouch')}
           </p>
           <Link to={getLocalizedPath(currentLanguage === 'de' ? 'kontakt' : 'contact')}>
-            <Button variant="secondary" size="lg" className="bg-white text-signal-500 hover:bg-primary-50">
+            <Button variant="secondary" size="lg" className="bg-white/90 text-primary-900 hover:bg-white hover:shadow-xl transition-all duration-300 backdrop-blur-sm">
               {t('hero.contact')}
             </Button>
           </Link>

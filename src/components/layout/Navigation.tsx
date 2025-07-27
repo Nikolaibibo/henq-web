@@ -50,12 +50,12 @@ export const Navigation = () => {
       role="navigation"
       aria-label={t('accessibility.navigation')}
     >
-      <div className="container-custom">
+      <div className="container-custom px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link 
             to={getLocalizedPath('')}
-            className="text-xl font-bold text-primary-50 hover:text-signal-400 transition-colors"
+            className="text-xl font-bold text-primary-50 hover:text-signal-400 transition-colors flex-shrink-0"
             aria-label={t('nav.home')}
           >
             HENQ Technologies
