@@ -55,7 +55,8 @@ export const SEO = ({
     ],
     contactPoint: {
       '@type': 'ContactPoint',
-      email: 'kontakt@henq-technologies.de',
+      email: 'info@henq-technologies.com',
+      telephone: '+49 176 66650703',
       contactType: 'customer service',
       areaServed: 'DE',
       availableLanguage: ['German', 'English']

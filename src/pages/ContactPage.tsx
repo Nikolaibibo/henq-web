@@ -303,7 +303,7 @@ export const ContactPage = () => {
                       <div>
                         <p className="font-medium text-primary-900">Email</p>
                         <a 
-                          href="mailto:kontakt@henq-technologies.de"
+                          href="mailto:info@henq-technologies.com"
                           className="text-signal-600 hover:text-signal-700"
                         >
                           {t('contact.info.email')}
@@ -315,9 +315,12 @@ export const ContactPage = () => {
                       <span className="text-2xl">📱</span>
                       <div>
                         <p className="font-medium text-primary-900">Phone</p>
-                        <span className="text-signal-600">
+                        <a 
+                          href="tel:+4917666650703"
+                          className="text-signal-600 hover:text-signal-700"
+                        >
                           {t('contact.info.phone')}
-                        </span>
+                        </a>
                       </div>
                     </div>
                     

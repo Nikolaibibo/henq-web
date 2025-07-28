@@ -68,7 +68,7 @@ export const PrivacyPage = () => {
                         Deutschland
                       </address>
                       <p>
-                        E-Mail: <a href="mailto:kontakt@henq-technologies.de" className="text-signal-600 hover:text-signal-700">kontakt@henq-technologies.de</a>
+                        E-Mail: <a href="mailto:info@henq-technologies.com" className="text-signal-600 hover:text-signal-700">info@henq-technologies.com</a>
                       </p>
                     </div>
                   </div>
@@ -204,7 +204,7 @@ export const PrivacyPage = () => {
                     </p>
                     <div className="mt-4 text-primary-700">
                       <p>
-                        E-Mail: <a href="mailto:privacy@henq.com" className="text-signal-600 hover:text-signal-700">privacy@henq.com</a>
+                        E-Mail: <a href="mailto:info@henq-technologies.com" className="text-signal-600 hover:text-signal-700">info@henq-technologies.com</a>
                       </p>
                     </div>
                   </div>

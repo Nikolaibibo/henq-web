@@ -62,15 +62,15 @@ export const ImprintPage = () => {
                     <div className="space-y-2 text-primary-700">
                       <p>
                         <strong>E-Mail:</strong>{' '}
-                        <a href="mailto:kontakt@henq-technologies.de" className="text-signal-600 hover:text-signal-700">
-                          kontakt@henq-technologies.de
+                        <a href="mailto:info@henq-technologies.com" className="text-signal-600 hover:text-signal-700">
+                          info@henq-technologies.com
                         </a>
                       </p>
                       <p>
                         <strong>Telefon:</strong>{' '}
-                        <span className="text-primary-600">
-                          [optional einfügen]
-                        </span>
+                        <a href="tel:+4917666650703" className="text-signal-600 hover:text-signal-700">
+                          +49 176 66650703
+                        </a>
                       </p>
                     </div>
                   </div>

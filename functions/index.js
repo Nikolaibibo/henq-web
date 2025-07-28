@@ -112,7 +112,7 @@ exports.contactFormSubmit = onRequest({
       // Email to company
       const companyEmailOptions = {
         from: emailUser.value(),
-        to: "kontakt@henq-technologies.de",
+        to: "info@henq-technologies.com",
         subject: `Neue Kontaktanfrage von ${sanitizedData.name}`,
         html: `
           <h2>Neue Kontaktanfrage</h2>

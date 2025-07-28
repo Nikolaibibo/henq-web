@@ -68,8 +68,16 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">{t('nav.contact')}</h4>
             <div className="space-y-2 text-primary-200">
-              <p>kontakt@henq-technologies.de</p>
-              <p>{t('contact.info.phone')}</p>
+              <p>
+                <a href="mailto:info@henq-technologies.com" className="hover:text-signal-400 transition-colors">
+                  {t('contact.info.email')}
+                </a>
+              </p>
+              <p>
+                <a href="tel:+4917666650703" className="hover:text-signal-400 transition-colors">
+                  {t('contact.info.phone')}
+                </a>
+              </p>
               <address className="not-italic">
                 St. Johannes Straße 16<br />
                 59964 Medebach<br />
