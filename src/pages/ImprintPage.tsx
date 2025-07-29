@@ -103,7 +103,7 @@ export const ImprintPage = () => {
                     </h2>
                     <div className="space-y-2 text-primary-700">
                       <p>Steuernummer: 123/456/78901</p>
-                      <p>Finanzamt: Musterstadt</p>
+                      <p>Finanzamt: Medebach</p>
                     </div>
                   </div>
 
@@ -148,7 +148,7 @@ export const ImprintPage = () => {
                   {/* Last Updated */}
                   <div className="pt-6 border-t border-primary-200">
                     <p className="text-sm text-primary-600">
-                      Stand: Januar 2024
+                      Stand: August 2025
                     </p>
                   </div>
                 </div>
