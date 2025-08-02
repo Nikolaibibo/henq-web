@@ -34,8 +34,8 @@ export const Footer = () => {
                 loading="lazy"
               />
             </div>
-            <p className="text-primary-200 leading-relaxed">
-              {t('hero.description')}
+            <p className="text-primary-100 text-base font-medium leading-relaxed opacity-90">
+              {t('footer.description')}
             </p>
           </div>
 

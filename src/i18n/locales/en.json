@@ -54,32 +54,26 @@
     "items": {
       "aiSolutions": {
         "title": "AI Solutions",
-        "description": "Cutting-edge artificial intelligence solutions for business automation.",
-        "status": "Coming Soon",
+        "description": "Intelligent AI solutions for modern business automation and customer communication with generative AI technologies.",
         "features": {
-          "ml": "Machine Learning",
-          "nlp": "Natural Language Processing",
-          "cv": "Computer Vision"
+          "chatbots": "Intelligent Chatbots and Conversational AI",
+          "agents": "Autonomous Agents for Business Processes",
+          "speechTech": "Speech-to-Text and Text-to-Speech Integration",
+          "contentGeneration": "Generative Content Creation and Automated Document Processing",
+          "nlpSentiment": "Natural Language Processing and Sentiment Analysis",
+          "computerVision": "Computer Vision and Intelligent Image Recognition"
         }
       },
       "cloudPlatform": {
         "title": "Cloud Platform",
-        "description": "Scalable cloud infrastructure and services for modern applications.",
-        "status": "In Development",
+        "description": "Tailored cloud infrastructure on Google Cloud and Amazon Web Services, optimized for maximum performance and cost efficiency according to individual customer requirements.",
         "features": {
-          "autoScale": "Auto Scaling",
-          "ha": "High Availability",
-          "security": "Security First"
-        }
-      },
-      "iotFramework": {
-        "title": "IoT Framework",
-        "description": "Complete framework for Internet of Things device management.",
-        "status": "Research Phase",
-        "features": {
-          "deviceMgmt": "Device Management",
-          "analytics": "Real-time Analytics",
-          "edge": "Edge Computing"
+          "flexibleScaling": "Flexible Scaling on Demand",
+          "costOptimization": "Cost-Optimized Resource Management",
+          "highAvailability": "High-Availability Architecture on AWS and Google Cloud",
+          "securityFirst": "Security-First Implementation",
+          "multiCloud": "Multi-Cloud and Hybrid Strategies",
+          "performanceMonitoring": "Performance Monitoring and Optimization"
         }
       }
     },
@@ -213,6 +207,7 @@
     "sendAnother": "Send another message"
   },
   "footer": {
+    "description": "Cutting-edge technology solutions tailored for your business needs.",
     "copyright": "© 2025 HENQ Technologies GbR. All rights reserved.",
     "links": {
       "imprint": "Imprint",

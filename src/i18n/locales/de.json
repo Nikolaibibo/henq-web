@@ -12,7 +12,7 @@
   "hero": {
     "title": "HENQ Technologies",
     "subtitle": "Innovative Lösungen für die Zukunft",
-    "description": "Wir entwickeln modernste Technologien und bieten maßgeschneiderte Lösungen für Unternehmen jeder Größe.",
+    "description": "Wir entwickeln modernste Technologie-Lösungen maßgeschmeidert für die  Anforderungen Ihres Unternehmens. Generative KI ermöglicht es uns, Ihre Prozesse zu optimieren und Effizienzen zu schaffen.",
     "cta": "Mehr erfahren",
     "contact": "Kontakt aufnehmen"
   },
@@ -53,33 +53,27 @@
     "keyFeatures": "Hauptfunktionen:",
     "items": {
       "aiSolutions": {
-        "title": "KI-Lösungen",
-        "description": "Modernste künstliche Intelligenz-Lösungen für Geschäftsautomatisierung.",
-        "status": "Bald verfügbar",
+        "title": "AI-Lösungen",
+        "description": "Intelligente KI-Lösungen für moderne Geschäftsautomatisierung und Kundenkommunikation mit generativen AI-Technologien.",
         "features": {
-          "ml": "Maschinelles Lernen",
-          "nlp": "Natürliche Sprachverarbeitung",
-          "cv": "Computer Vision"
+          "chatbots": "Intelligente Chatbots und Conversational AI",
+          "agents": "Autonome Agents für Geschäftsprozesse",
+          "speechTech": "Speech-to-Text und Text-to-Speech Integration",
+          "contentGeneration": "Generative Inhaltserstellung und automatisierte Dokumentenverarbeitung",
+          "nlpSentiment": "Natürliche Sprachverarbeitung und Sentiment-Analyse",
+          "computerVision": "Computer Vision und intelligente Bilderkennung"
         }
       },
       "cloudPlatform": {
         "title": "Cloud-Plattform",
-        "description": "Skalierbare Cloud-Infrastruktur und -Services für moderne Anwendungen.",
-        "status": "In Entwicklung",
+        "description": "Maßgeschneiderte Cloud-Infrastruktur auf Google Cloud und Amazon Web Services, optimiert für maximale Performance und Kosteneffizienz nach individuellen Kundenanforderungen.",
         "features": {
-          "autoScale": "Automatische Skalierung",
-          "ha": "Hochverfügbarkeit",
-          "security": "Security First"
-        }
-      },
-      "iotFramework": {
-        "title": "IoT-Framework",
-        "description": "Komplettes Framework für Internet of Things Geräteverwaltung.",
-        "status": "Forschungsphase",
-        "features": {
-          "deviceMgmt": "Geräteverwaltung",
-          "analytics": "Echtzeitanalysen",
-          "edge": "Edge Computing"
+          "flexibleScaling": "Flexible Skalierung nach Bedarf",
+          "costOptimization": "Kostenoptimierte Ressourcenverwaltung",
+          "highAvailability": "Hochverfügbare Architektur auf AWS und Google Cloud",
+          "securityFirst": "Security-First Implementierung",
+          "multiCloud": "Multi-Cloud und Hybrid-Strategien",
+          "performanceMonitoring": "Performance-Monitoring und Optimierung"
         }
       }
     },
@@ -92,15 +86,15 @@
   "services": {
     "technologyConsulting": {
       "title": "Technologieberatung",
-      "description": "Expertenberatung für Ihre Technologiestrategie und -implementierung."
+      "description": "Unsere internationalen Experten für Ihre Technologiestrategie und -implementierung."
     },
     "softwareDevelopment": {
       "title": "Softwareentwicklung",
-      "description": "Maßgeschneiderte Softwarelösungen für Ihre Geschäftsanforderungen."
+      "description": "Maßgeschneiderte Softwarelösungen für Ihre Geschäftsanforderungen. Auf Basis modernster Technologien."
     },
     "innovationLabs": {
       "title": "Innovationslabore",
-      "description": "Erforschung modernster Technologien für zukünftige Anwendungen."
+      "description": "Erprobung und Markteinführung modernster Technologien für heutige Anwendungen in Ihrem Unternehmen."
     }
   },
   "cta": {
@@ -213,6 +207,7 @@
     "sendAnother": "Weitere Nachricht senden"
   },
   "footer": {
+    "description": "KI-gestützte Prozessoptimierung.",
     "copyright": "© 2025 HENQ Technologies GbR. Alle Rechte vorbehalten.",
     "links": {
       "imprint": "Impressum",

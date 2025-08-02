@@ -10,34 +10,27 @@ export const ProductsPage = () => {
     {
       title: t('products.items.aiSolutions.title'),
       description: t('products.items.aiSolutions.description'),
-      status: t('products.items.aiSolutions.status'),
       icon: '🤖',
       features: [
-        t('products.items.aiSolutions.features.ml'),
-        t('products.items.aiSolutions.features.nlp'),
-        t('products.items.aiSolutions.features.cv')
+        t('products.items.aiSolutions.features.chatbots'),
+        t('products.items.aiSolutions.features.agents'),
+        t('products.items.aiSolutions.features.speechTech'),
+        t('products.items.aiSolutions.features.contentGeneration'),
+        t('products.items.aiSolutions.features.nlpSentiment'),
+        t('products.items.aiSolutions.features.computerVision')
       ]
     },
     {
       title: t('products.items.cloudPlatform.title'),
       description: t('products.items.cloudPlatform.description'),
-      status: t('products.items.cloudPlatform.status'),
       icon: '☁️',
       features: [
-        t('products.items.cloudPlatform.features.autoScale'),
-        t('products.items.cloudPlatform.features.ha'),
-        t('products.items.cloudPlatform.features.security')
-      ]
-    },
-    {
-      title: t('products.items.iotFramework.title'),
-      description: t('products.items.iotFramework.description'),
-      status: t('products.items.iotFramework.status'),
-      icon: '🌐',
-      features: [
-        t('products.items.iotFramework.features.deviceMgmt'),
-        t('products.items.iotFramework.features.analytics'),
-        t('products.items.iotFramework.features.edge')
+        t('products.items.cloudPlatform.features.flexibleScaling'),
+        t('products.items.cloudPlatform.features.costOptimization'),
+        t('products.items.cloudPlatform.features.highAvailability'),
+        t('products.items.cloudPlatform.features.securityFirst'),
+        t('products.items.cloudPlatform.features.multiCloud'),
+        t('products.items.cloudPlatform.features.performanceMonitoring')
       ]
     }
   ]
@@ -85,14 +78,9 @@ export const ProductsPage = () => {
                     <CardContent>
                       <div className="text-center mb-6">
                         <div className="text-6xl mb-4">{product.icon}</div>
-                        <div className="flex items-center justify-center mb-2">
-                          <h3 className="text-2xl font-bold text-primary-900 mr-3">
-                            {product.title}
-                          </h3>
-                          <span className="px-3 py-1 bg-signal-100 text-signal-700 text-sm rounded-full">
-                            {product.status}
-                          </span>
-                        </div>
+                        <h3 className="text-2xl font-bold text-primary-900 mb-2">
+                          {product.title}
+                        </h3>
                       </div>
                       
                       <p className="text-primary-700 leading-relaxed mb-6 text-center">
