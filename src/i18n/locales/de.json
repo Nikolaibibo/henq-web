@@ -115,7 +115,7 @@
       "nikolaiBockholt": {
         "name": "Nikolai Bockholt",
         "role": "Mitgründer & Gesellschafter",
-        "bio": "Innovativer Technologieexperte mit Leidenschaft für moderne Softwareentwicklung und digitale Transformation.",
+        "bio": "Technologie-Experte mit 9,5 Jahren Erfahrung bei Google als Creative Technologist. Spezialist für innovative Softwareentwicklung und digitale Transformation.",
         "expertise": {
           "development": "Softwareentwicklung",
           "architecture": "System-Architektur",
@@ -125,7 +125,7 @@
       "tobiasNisse": {
         "name": "Tobias Nisse",
         "role": "Mitgründer & Gesellschafter",
-        "bio": "Erfahrener Technologie-Stratege mit Fokus auf skalierbare Lösungen und Geschäftsentwicklung.",
+        "bio": "Ehemaliger Berufssoldat und Jäger mit ausgeprägtem Geschäftssinn. Fokus auf strategische Planung, skalierbare Lösungen und nachhaltige Geschäftsentwicklung.",
         "expertise": {
           "strategy": "Geschäftsstrategie",
           "scaling": "Skalierbare Systeme",
@@ -138,7 +138,7 @@
     "title": "News",
     "subtitle": "Aktuelle Nachrichten",
     "description": "Bleiben Sie auf dem Laufenden über unsere neuesten Entwicklungen.",
-    "readMore": "Weiterlesen",
+    "readMore": "Weiterlesen →",
     "noNews": "Keine Nachrichten verfügbar",
     "moreNewsComing": {
       "title": "Weitere News folgen",
@@ -146,21 +146,30 @@
     },
     "categories": {
       "companyNews": "Unternehmensnachrichten",
-      "partnerships": "Partnerschaften",
+      "productNews": "Produktneuheiten",
       "research": "Forschung"
     },
     "articles": {
-      "innovationLab": {
-        "title": "HENQ Technologies eröffnet Innovationslabor",
-        "excerpt": "Wir freuen uns, die Eröffnung unseres neuen Innovationslabors mit Schwerpunkt auf KI und neuen Technologien bekannt zu geben."
+      "companyFounding": {
+        "title": "HENQ Technologies gegründet: Vision für die Zukunft intelligenter Technologien",
+        "excerpt": "Wir freuen uns, die Gründung von HENQ Technologies bekannt zu geben – einem innovativen Technologieunternehmen mit der Mission, Unternehmen durch intelligente AI-Lösungen und maßgeschneiderte Cloud-Infrastrukturen zu transformieren.",
+        "content": "Die Gründer Nikolai Bockholt, ehemaliger Creative Technologist bei Google mit 9,5 Jahren Erfahrung, und Tobias Nisse, ehemaliger Berufssoldat und erfolgreicher Geschäftsmann, vereinen technische Exzellenz mit strategischem Geschäftssinn. Gemeinsam verfolgen sie die Vision, modernste KI-Technologien und Cloud-Lösungen zugänglich und effizient für Unternehmen jeder Größe zu gestalten.",
+        "category": "Unternehmensnachrichten",
+        "date": "2025-08-01"
       },
-      "partnerships": {
-        "title": "Partnerschaft mit führenden Technologieunternehmen",
-        "excerpt": "HENQ Technologies bildet strategische Partnerschaften zur Beschleunigung der Technologieentwicklung."
+      "pixelRevive": {
+        "title": "PixelRevive.app gelauncht: Generative KI erweckt alte Fotos zum Leben",
+        "excerpt": "HENQ Technologies präsentiert PixelRevive.app – eine revolutionäre webbasierte Anwendung, die mittels generativer KI-Technologien alte und beschädigte Fotos in beeindruckender Qualität restauriert.",
+        "content": "Die Plattform nutzt modernste Large Language Models und Computer Vision-Algorithmen, um automatisch Kratzer zu entfernen, Farben zu rekonstruieren und die ursprüngliche Schärfe wiederherzustellen. PixelRevive.app macht professionelle Fotorestaurierung für jeden zugänglich und demonstriert eindrucksvoll das Potenzial generativer KI im kreativen Bereich.",
+        "category": "Produktneuheiten",
+        "date": "2025-08-02"
       },
-      "aiEthics": {
-        "title": "Forschungspapier über KI-Ethik veröffentlicht",
-        "excerpt": "Unser Forschungsteam trägt zur laufenden Diskussion über ethische KI-Entwicklung bei."
+      "phoneAI": {
+        "title": "Durchbruch in der Telefon-KI: Natürliche Konversationen durch modernste LLM-Technologie",
+        "excerpt": "HENQ Technologies arbeitet an einer bahnbrechenden B2B-Telefon-KI-Lösung, die durch den Einsatz modernster Large Language Models eine neue Ära der Kundenkommunikation einläutet.",
+        "content": "Das innovative System ermöglicht natürliche, kontextbewusste Gespräche, die sich von herkömmlichen automatisierten Telefonsystemen fundamental unterscheiden. Durch die Integration fortschrittlicher Sprachverarbeitung entstehen Interaktionen, die so fließend und verständnisvoll sind, wie man sie bisher nur von menschlichen Gesprächspartnern kannte.",
+        "category": "Forschung",
+        "date": "2025-08-03"
       }
     }
   },

@@ -5,25 +5,25 @@ import { Container, Card, CardContent } from '@/components/ui'
 export const NewsPage = () => {
   const { t } = useTranslation()
 
-  // Placeholder news articles
+  // News articles
   const newsArticles = [
     {
-      title: t('news.articles.innovationLab.title'),
-      date: '2024-01-15',
-      excerpt: t('news.articles.innovationLab.excerpt'),
-      category: t('news.categories.companyNews')
+      title: t('news.articles.companyFounding.title'),
+      date: t('news.articles.companyFounding.date'),
+      excerpt: t('news.articles.companyFounding.excerpt'),
+      category: t('news.articles.companyFounding.category')
     },
     {
-      title: t('news.articles.partnerships.title'),
-      date: '2024-01-10',
-      excerpt: t('news.articles.partnerships.excerpt'),
-      category: t('news.categories.partnerships')
+      title: t('news.articles.pixelRevive.title'),
+      date: t('news.articles.pixelRevive.date'),
+      excerpt: t('news.articles.pixelRevive.excerpt'),
+      category: t('news.articles.pixelRevive.category')
     },
     {
-      title: t('news.articles.aiEthics.title'),
-      date: '2024-01-05',
-      excerpt: t('news.articles.aiEthics.excerpt'),
-      category: t('news.categories.research')
+      title: t('news.articles.phoneAI.title'),
+      date: t('news.articles.phoneAI.date'),
+      excerpt: t('news.articles.phoneAI.excerpt'),
+      category: t('news.articles.phoneAI.category')
     }
   ]
 

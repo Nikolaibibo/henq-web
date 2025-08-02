@@ -115,7 +115,7 @@
       "nikolaiBockholt": {
         "name": "Nikolai Bockholt",
         "role": "Co-Founder & Partner",
-        "bio": "Innovative technology expert with a passion for modern software development and digital transformation.",
+        "bio": "Technology expert with 9.5 years of experience at Google as a Creative Technologist. Specialist in innovative software development and digital transformation.",
         "expertise": {
           "development": "Software Development",
           "architecture": "System Architecture",
@@ -125,7 +125,7 @@
       "tobiasNisse": {
         "name": "Tobias Nisse",
         "role": "Co-Founder & Partner",
-        "bio": "Experienced technology strategist focused on scalable solutions and business development.",
+        "bio": "Former professional soldier and hunter with strong business acumen. Focus on strategic planning, scalable solutions, and sustainable business development.",
         "expertise": {
           "strategy": "Business Strategy",
           "scaling": "Scalable Systems",
@@ -138,7 +138,7 @@
     "title": "News",
     "subtitle": "Latest Updates",
     "description": "Stay informed about our latest developments.",
-    "readMore": "Read more",
+    "readMore": "Read more →",
     "noNews": "No news available",
     "moreNewsComing": {
       "title": "More News Coming Soon",
@@ -146,21 +146,30 @@
     },
     "categories": {
       "companyNews": "Company News",
-      "partnerships": "Partnerships",
+      "productNews": "Product News",
       "research": "Research"
     },
     "articles": {
-      "innovationLab": {
-        "title": "HENQ Technologies Launches Innovation Lab",
-        "excerpt": "We are excited to announce the opening of our new innovation lab focused on AI and emerging technologies."
+      "companyFounding": {
+        "title": "HENQ Technologies Founded: Vision for the Future of Intelligent Technologies",
+        "excerpt": "We are excited to announce the founding of HENQ Technologies – an innovative technology company with the mission to transform businesses through intelligent AI solutions and tailored cloud infrastructures.",
+        "content": "The founders Nikolai Bockholt, former Creative Technologist at Google with 9.5 years of experience, and Tobias Nisse, former professional soldier and successful businessman, combine technical excellence with strategic business acumen. Together, they pursue the vision of making cutting-edge AI technologies and cloud solutions accessible and efficient for companies of all sizes.",
+        "category": "Company News",
+        "date": "2025-08-01"
       },
-      "partnerships": {
-        "title": "Partnership with Leading Tech Companies",
-        "excerpt": "HENQ Technologies forms strategic partnerships to accelerate technology development."
+      "pixelRevive": {
+        "title": "PixelRevive.app Launched: Generative AI Brings Old Photos Back to Life",
+        "excerpt": "HENQ Technologies presents PixelRevive.app – a revolutionary web-based application that restores old and damaged photos to impressive quality using generative AI technologies.",
+        "content": "The platform utilizes cutting-edge Large Language Models and Computer Vision algorithms to automatically remove scratches, reconstruct colors, and restore original sharpness. PixelRevive.app makes professional photo restoration accessible to everyone and impressively demonstrates the potential of generative AI in the creative field.",
+        "category": "Product News",
+        "date": "2025-08-02"
       },
-      "aiEthics": {
-        "title": "Research Paper Published on AI Ethics",
-        "excerpt": "Our research team contributes to the ongoing discussion about ethical AI development."
+      "phoneAI": {
+        "title": "Breakthrough in Phone AI: Natural Conversations Through Advanced LLM Technology",
+        "excerpt": "HENQ Technologies is working on a groundbreaking B2B phone AI solution that ushers in a new era of customer communication through the use of cutting-edge Large Language Models.",
+        "content": "The innovative system enables natural, context-aware conversations that fundamentally differ from conventional automated phone systems. Through the integration of advanced speech processing, interactions emerge that are as fluid and understanding as those previously known only from human conversation partners.",
+        "category": "Research",
+        "date": "2025-08-03"
       }
     }
   },

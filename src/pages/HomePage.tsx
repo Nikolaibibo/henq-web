@@ -5,6 +5,7 @@ import { useLanguage } from '@/hooks/useLanguage'
 import { Container, Button, Card, CardContent } from '@/components/ui'
 import { SEO } from '@/components/SEO'
 import { SimpleAnimation } from '@/components/SimpleAnimation'
+import { ElevenLabsWidget } from '@/components/ElevenLabsWidget'
 import { trackButtonClick } from '@/config/firebase'
 
 const Hero = () => {
@@ -104,6 +105,41 @@ const Services = () => {
   )
 }
 
+const AIDemo = () => {
+  const { t } = useTranslation()
+
+  return (
+    <section className="section bg-white relative">
+      <Container>
+        <SimpleAnimation delay={200}>
+          <div className="text-center max-w-4xl mx-auto mb-8">
+            <div className="text-5xl mb-6">🤖</div>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-900 mb-6">
+              {t('hero.title')} AI Assistant
+            </h2>
+            <p className="text-lg text-primary-700 mb-8 max-w-2xl mx-auto">
+              Experience our cutting-edge conversational AI technology. Try our intelligent assistant powered by advanced language models.
+            </p>
+          </div>
+        </SimpleAnimation>
+      </Container>
+      
+      {/* Widget outside container for full freedom */}
+      <div className="w-full">
+        <ElevenLabsWidget className="w-full" />
+      </div>
+      
+      <Container>
+        <div className="text-center mt-8">
+          <p className="text-sm text-primary-600">
+            This AI assistant demonstrates our capabilities in natural language processing and conversational AI.
+          </p>
+        </div>
+      </Container>
+    </section>
+  )
+}
+
 const CallToAction = () => {
   const { t } = useTranslation()
   const { getLocalizedPath, currentLanguage } = useLanguage()
@@ -150,6 +186,7 @@ export const HomePage = () => {
       
       <Hero />
       <Services />
+      <AIDemo />
       <CallToAction />
     </>
   )
